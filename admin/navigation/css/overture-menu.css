@@ -1,0 +1,108 @@
+#primary-nav-row{
+    background-color: #fff;
+}
+#primary-nav-menu   {
+    margin: 0 ; /* just to give some spacing */
+    display: block;
+    width: 100%;
+    background-color: #fff;
+}
+#masthead{
+    border-bottom: solid 1px #EEEEEE;
+}
+#primary-mobile-nav-menu{
+    border-bottom: solid 1px #EEEEEE;
+}
+#primary-nav-menu ul    {
+    float: right;
+    margin: 0; padding: 0; /* only needed if you have not done a CSS reset */
+}
+#primary-nav-menu li    {
+    text-align: left;
+    display: block;
+    float: right;
+    margin: 0; padding: 0; /* only needed if you don't have a reset */
+    position: relative; /* this is needed in order to position sub menus */
+}
+#primary-nav-menu li a  {
+    display: block;
+    padding: 20px 25px;
+    word-break: normal;
+    word-wrap: normal;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+#primary-nav-menu a{
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+li.current-menu-item > a{
+    color: #1266f1 !important;
+    font-weight: bold;
+}
+#primary-nav-menu li a:hover{
+    /* text-decoration: underline; */
+    color: #1266f1;
+}
+#primary-nav-menu ul ul { /* this targets all sub menus */
+    display: none; /* hide all sub menus from view */
+    position: absolute;
+    top: 79px; /* this should be the same height as the top level menu -- height + padding + borders */
+    right: 0;
+}
+#primary-nav-menu ul ul li { /* this targets all submenu items */
+    float: none; /* overwriting our float up above */
+    width: 250px; /* set to the width you want your sub menus to be. This needs to match the value we set below */
+}
+#primary-nav-menu ul li a { /* target all sub menu item links */
+    padding: 27.5px 20px; /* give our sub menu links a nice button feel */
+}
+#primary-nav-menu ul li:hover > ul {
+    display: block; /* show sub menus when hovering over a parent */
+}
+#primary-nav-menu ul ul li ul {
+    /* target all second, third, and deeper level sub menus */
+    right: 250px; /* this needs to match the sub menu width set above -- width + padding + borders */
+    top: -1px; /* this ensures the sub menu starts in line with its parent item */
+}
+#primary-nav-menu li.menu-item-has-children a {
+    padding-right: 40px !important;
+}
+#primary-nav-menu li.menu-item-has-children:after {
+    content: '\f078';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+    top: 34px;
+    font-size: 10px;
+    cursor: pointer;
+    color: #000;
+}
+#primary-nav-menu  li a{
+    color: #000;
+}
+#primary-nav-menu  li{
+    color: #000;
+    background-color: #fff;
+}
+#primary-nav-menu  ul .sub-menu li{
+    border-top: solid 1px #EEEEEE;
+}
+#primary-nav-menu  ul .sub-menu{
+    border-width: thin;
+    border: solid 1px #EEEEEE;
+    /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15)!important; */
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 5%)!important;
+
+    border-top: none;
+}
+#header{
+    border-bottom: solid 1px #EEEEEE;
+}
